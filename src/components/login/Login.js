@@ -1,13 +1,13 @@
 import React from "react";
-import Input from "../inputComponent/Input"
+import Input from "../UIControls/Input"
 
 import './login.css';
 import './login-responsive.css';
 
 
-const Login = () => {
+const Login = (props) => {
     return (
-        <div class="container-fluid login-container">
+        <div class="container-fluid login-container mt-4">
           
           <div class="">
             <div class="w-100 content-space-t-4 content-space-t-lg-2 content-space-b-1 login-section-width">
@@ -15,7 +15,7 @@ const Login = () => {
               <form class="js-validate needs-validation" novalidate="">
                 <div class="text-center">
                   
-                  <h1 class="login-h1 login-bottom-spance mt-4">Login</h1>
+                  <h1 class="login-h1 login-bottom-spance">Login</h1>
                  
                   
                   {/* <nav>
@@ -31,20 +31,15 @@ const Login = () => {
                 <div class="tab-content login-tab-content" id="nav-tabContent">
                   <div class="tab-pane fade show active" id="nav-login" role="tabpanel" aria-labelledby="nav-login-tab" tabindex="0">
 
-                        <Input />
-
-                      <div class="input-group login-input-group">
-                        <label class="input-group-text" for=""><i class="input-icon ic-mail"></i></label>
-                        <input type="text" class="form-control" placeholder="Email Address" id="" />
-                      </div>
+                        <Input   />
                     
-                      <div class="input-group login-input-group">
+                      <div class="input-group login-input-group mt-4">
                         <label class="input-group-text" for=""><i class="input-icon ic-lock"></i></label>
-                        <input type="text" class="form-control" placeholder="Password" id="" />
+                        <input type="password" class="form-control rounded-0" placeholder="Password" id="" />
                        <label class="input-group-text" for=""><i class="input-icon ic-eye-slash"></i></label>
                       </div>
                     
-                      <div class="d-flex justify-content-between align-items-center login-input-switch">
+                      <div class="d-flex justify-content-between align-items-center login-input-switch mt-3">
                         <div class="form-check form-switch">
                           <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked />
                           <label class="form-check-label" for="flexSwitchCheckChecked">Remind Me</label>
@@ -52,8 +47,8 @@ const Login = () => {
                         <a href="forgot-password.html">Forget password ?</a>
                       </div>
                     
-                    <div class="d-grid">
-                      <button type="submit" class="btn login-btn btn-green btn-lg">Login</button>
+                    <div class="d-grid pt-4">
+                      <button type="submit" class="btn login-btn btn-green btn-lg p-2">Login</button>
                     </div>
                   </div>
                   {/* <div class="tab-pane fade" id="nav-register" role="tabpanel" aria-labelledby="nav-register-tab" tabindex="0">

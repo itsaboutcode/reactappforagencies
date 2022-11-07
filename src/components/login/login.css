@@ -32,9 +32,6 @@ ul,ol{
   border-color: #ced4da;
 }
 /* Login and Register pages css Start */
-.login-section-width{
-  max-width: 28.438rem;
-}
 .main {
   -ms-flex-positive: 1;
   flex-grow: 1;
@@ -85,9 +82,7 @@ ul,ol{
 .login-tab-content{
   padding-bottom: 6.25rem;
 }
-.login-input-group{
-  margin-top: 3.125rem;
-}
+
 .login-input-group .input-group-text{
   border-top: none;
   border-left: none;
@@ -101,7 +96,6 @@ ul,ol{
   border-left: none;
   border-right: none;
   border-top: none;
-  padding-left: 1.25rem;
 }
 .input-icon{
   width: 24px;
@@ -118,18 +112,18 @@ ul,ol{
   border-radius: 100%;
   margin-right: .1rem;
   display: inline-block;
-/* }
+}
 .ic-user{
-  background-image: url(../css/images/ic-user.svg);
+  background-image: url(../../Assets/Images/ic-user.svg);
 }
 .ic-mail{
-  background-image: url(../css/images/ic-mail.svg);
+  background-image: url(../../Assets/Images/ic-mail.svg);
 }
 .ic-lock{
-  background-image: url(../css/images/ic-lock.svg);
+  background-image: url(../../Assets/Images/ic-lock.svg);
 }
 .ic-eye-slash{
-  background-image: url(../css/images/ic-hide.svg); */
+  background-image: url(../../Assets/Images/ic-hide.svg);
 }
 .login-input-group .form-control::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color: var(--gray-text-color);
@@ -215,16 +209,16 @@ ul,ol{
   background-repeat: no-repeat;
   background-size: 100%;
 }
-/* .ic-apple{
-  background-image: url(../css/images/ic-apple.svg);
+.ic-apple{
+  background-image: url(../../Assets/Images/ic-apple.svg);
   height: 1.563rem;
 }
 .ic-google{
-  background-image: url(../css/images/ic-google.svg);
+  background-image: url(../../Assets/Images/ic-google.svg);
 }
 .ic-facebook{
-  background-image: url(../css/images/ic-facebook.svg);
-} */
+  background-image: url(../../Assets/Images/ic-facebook.svg);
+}
 .action-arrow{
   width: 1.375rem;
   height: 1.563rem;
@@ -232,7 +226,7 @@ ul,ol{
   background-position:center;
   background-repeat: no-repeat;
   background-size: 100%; 
-  /* background-image: url(../css/images/ic-arrow.svg); */
+  background-image: url(../../Assets/Images/ic-arrow.svg);
 }
 /* Login and Register pages css End */
 
@@ -278,7 +272,7 @@ ul,ol{
   filter: brightness(0) invert(1);
 }
 .add{
-  /* background: url(images/add-bg.png) no-repeat 0 0 transparent; */
+  background: url(../../Assets/Images/add-bg.png) no-repeat 0 0 transparent;
   background-size: 100%;
   height: 445px;
   padding: 0.938rem;
@@ -316,5 +310,5 @@ ul,ol{
 }
 /* Dashbaord page css End */
 .login-container{
-    max-width: 600px;
+    max-width: 400px;
 }
