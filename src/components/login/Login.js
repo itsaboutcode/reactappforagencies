@@ -1,8 +1,11 @@
 import React from "react";
-import Input from "../UIControls/Input"
+import Input from "../UIControls/Input";
+import InputPassword from "../UIControls/InputPassword";
+import Buttons from "../UIControls/Buttons";
 
 import './login.css';
 import './login-responsive.css';
+
 
 
 const Login = (props) => {
@@ -33,11 +36,7 @@ const Login = (props) => {
 
                         <Input   />
                     
-                      <div class="input-group login-input-group mt-4">
-                        <label class="input-group-text" for=""><i class="input-icon ic-lock"></i></label>
-                        <input type="password" class="form-control rounded-0" placeholder="Password" id="" />
-                       <label class="input-group-text" for=""><i class="input-icon ic-eye-slash"></i></label>
-                      </div>
+                        <InputPassword />
                     
                       <div class="d-flex justify-content-between align-items-center login-input-switch mt-3">
                         <div class="form-check form-switch">
@@ -48,7 +47,7 @@ const Login = (props) => {
                       </div>
                     
                     <div class="d-grid pt-4">
-                      <button type="submit" class="btn login-btn btn-green btn-lg p-2">Login</button>
+                      <Buttons />
                     </div>
                   </div>
                   {/* <div class="tab-pane fade" id="nav-register" role="tabpanel" aria-labelledby="nav-register-tab" tabindex="0">
