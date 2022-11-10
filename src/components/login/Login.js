@@ -4,7 +4,7 @@ import PasswordTextField from "../UIControls/PasswordTextField";
 import SimpleTextField from "../UIControls/SimpleTextField";
 import UserIconLabel from "../UIControls/UserIconLabel";
 import LockIconLabel from "../UIControls/LockIconLabel";
-import ShowPasswordLabel from "../UIControls/ShowPasswordLabel";
+
 
 import './login.css';
 import './login-responsive.css';
@@ -12,6 +12,7 @@ import './login-responsive.css';
 
 
 const Login = () => {
+  
     return (
         <div class="container-fluid login-container mt-4">
           
@@ -45,7 +46,6 @@ const Login = () => {
                         <div class="input-group login-input-group mt-4">
                             <LockIconLabel />
                             <PasswordTextField placeholder="Password" id='password'/>
-                            <ShowPasswordLabel />
                         </div>
                     
                       <div class="d-flex justify-content-between align-items-center login-input-switch mt-3">
