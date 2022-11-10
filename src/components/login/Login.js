@@ -1,14 +1,17 @@
 import React from "react";
-import Input from "../UIControls/Input";
-import InputPassword from "../UIControls/InputPassword";
 import Buttons from "../UIControls/Buttons";
+import PasswordTextField from "../UIControls/PasswordTextField";
+import SimpleTextField from "../UIControls/SimpleTextField";
+import UserIconLabel from "../UIControls/UserIconLabel";
+import LockIconLabel from "../UIControls/LockIconLabel";
+import ShowPasswordLabel from "../UIControls/ShowPasswordLabel";
 
 import './login.css';
 import './login-responsive.css';
 
 
 
-const Login = (props) => {
+const Login = () => {
     return (
         <div class="container-fluid login-container mt-4">
           
@@ -34,9 +37,16 @@ const Login = (props) => {
                 <div class="tab-content login-tab-content" id="nav-tabContent">
                   <div class="tab-pane fade show active" id="nav-login" role="tabpanel" aria-labelledby="nav-login-tab" tabindex="0">
 
-                        <Input   />
-                    
-                        <InputPassword />
+                        <div className="input-group login-input-group pt-10">
+                            <UserIconLabel />
+                            <SimpleTextField placeholder="User name" id='userName' />
+                        </div>
+
+                        <div class="input-group login-input-group mt-4">
+                            <LockIconLabel />
+                            <PasswordTextField placeholder="Password" id='password'/>
+                            <ShowPasswordLabel />
+                        </div>
                     
                       <div class="d-flex justify-content-between align-items-center login-input-switch mt-3">
                         <div class="form-check form-switch">
@@ -45,7 +55,7 @@ const Login = (props) => {
                         </div>
                         <a href="forgot-password.html">Forget password ?</a>
                       </div>
-                    
+
                     <div class="d-grid pt-4">
                       <Buttons />
                     </div>

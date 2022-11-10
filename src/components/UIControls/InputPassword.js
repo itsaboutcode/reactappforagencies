@@ -1,19 +1,15 @@
 import React from "react";
+import InputTypes from "./InputTypes";
 
-
-
-const InputPassword = () => {
-    return (
-        <>
-            <div class="input-group login-input-group mt-4">
-                <label class="input-group-text" for=""><i class="input-icon ic-lock"></i></label>
-                <input type="password" class="form-control rounded-0" placeholder="Password" id="" />
-                <label class="input-group-text" for=""><i class="input-icon ic-eye-slash"></i></label>
-            </div>
-        </>
-        );
-    };
+const PasswordTextField = ({ placeholder, id })  =>  {
+            return (
+                <>
+                    <InputTypes inputType = 'password' inputClass = "form-control rounded-0" placeholder = { placeholder } inputId = { id } />
+                </>
+            )
+                
+        }
 
 
     
-    export default InputPassword;
+    export default PasswordTextField;
