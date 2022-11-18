@@ -1,4 +1,5 @@
 import React from "react";
+import SubNav from "./SubNav";
 
 const AsideList = ({mainListId, dataBsTarget, imgSrc, subListId, ariaControls, title, imgSrcArrow, ariaLabelledby}) => {
     return(
@@ -10,15 +11,7 @@ const AsideList = ({mainListId, dataBsTarget, imgSrc, subListId, ariaControls, t
                     <img src={imgSrcArrow} className="ms-auto" alt="" />
                 </a>
                 <div id={subListId} className="accordion-collapse collapse p-0" aria-labelledby={ariaLabelledby} data-bs-parent="#accordionFlushExample">
-                    <ul>
-                        <li><a href="javascript:;">Ratings</a></li>
-                        <li><a href="javascript:;">Brands</a></li>
-                        <li><a href="javascript:;">Traits</a></li>
-                        <li><a href="javascript:;">Maturities</a></li>
-                        <li><a href="javascript:;">Hybrids</a></li>
-                        <li><a href="javascript:;">Add Rating</a></li>
-                        <li><a href="javascript:;">Pending Variety Tags</a></li>
-                    </ul>
+                    <SubNav />
                 </div>
             </li>
         </>
