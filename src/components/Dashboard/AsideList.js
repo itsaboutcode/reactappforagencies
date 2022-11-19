@@ -1,7 +1,7 @@
 import React from "react";
 import SubNav from "./SubNav";
 
-const AsideList = ({mainListId, dataBsTarget, imgSrc, subListId, ariaControls, title, imgSrcArrow, ariaLabelledby}) => {
+const AsideList = ({mainListId, dataBsTarget, imgSrc, subListId, ariaControls, title, imgSrcArrow, ariaLabelledby, subMenu}) => {
     return(
         <>
             <li id={mainListId}>
@@ -11,7 +11,9 @@ const AsideList = ({mainListId, dataBsTarget, imgSrc, subListId, ariaControls, t
                     <img src={imgSrcArrow} className="ms-auto" alt="" />
                 </a>
                 <div id={subListId} className="accordion-collapse collapse p-0" aria-labelledby={ariaLabelledby} data-bs-parent="#accordionFlushExample">
-                    <SubNav />
+                    <SubNav 
+                        subMenu={subMenu}
+                     />
                 </div>
             </li>
         </>

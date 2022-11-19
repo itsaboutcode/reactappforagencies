@@ -23,6 +23,7 @@ const stockDataNav = [
         imgSrc:icHome,
         subListId:'flush-collapse1',
         title:'Dashboard',
+        subMenu: ["Item 1", "Item 2"],
     },
     {
         mainListId: 'flush-headingOne', 
@@ -33,6 +34,7 @@ const stockDataNav = [
         subListId:'flush-collapseOne', 
         title:'Corn',
         imgSrcArrow:icDownArrow,
+        subMenu: ["Item 3", "Item 4"],
     },
     {
         mainListId:'flush-headingTwo',
@@ -43,6 +45,7 @@ const stockDataNav = [
         subListId:'flush-collapseTwo',
         title:'Soybeans',
         imgSrcArrow:icDownArrow,
+        subMenu: ["Item 5", "Item 6"],
     },
     {
         mainListId:'flush-headingThree',
@@ -53,6 +56,7 @@ const stockDataNav = [
         subListId:'flush-collapseThree',
         title:'Nutrients',
         imgSrcArrow:icDownArrow,
+        subMenu: ["Item 7", "Item 8"],
     },
     {
         mainListId:'flush-headingFour',
@@ -63,6 +67,7 @@ const stockDataNav = [
         subListId:'flush-collapseFour',
         title:'Additional Products',
         imgSrcArrow:icDownArrow,
+        subMenu: ["Item 9", "Item 10"],
     },
     {
         mainListId:'flush-headingFive',
@@ -73,6 +78,7 @@ const stockDataNav = [
         subListId:'flush-collapseFive',
         title:'Price Quotes',
         imgSrcArrow:icDownArrow,
+        subMenu: ["Item 11", "Item 12"],
     },
     {
         mainListId:'flush-headingSix',
@@ -83,6 +89,7 @@ const stockDataNav = [
         subListId:'flush-collapseSix',
         title:'Feathured Products',
         imgSrcArrow:icDownArrow,
+        subMenu: [],
     },
     {
         mainListId:'flush-headingSeven',
@@ -93,6 +100,7 @@ const stockDataNav = [
         subListId:'flush-collapseSeven',
         title:'Video',
         imgSrcArrow:icDownArrow,
+        subMenu:[],
     },
     {
         mainListId:'flush-headingEight',
@@ -103,6 +111,7 @@ const stockDataNav = [
         subListId:'flush-collapseEight',
         title:'Ads',
         imgSrcArrow:icDownArrow,
+        subMenu:[],
     },
     {
         mainListId:'flush-headingNine',
@@ -113,6 +122,7 @@ const stockDataNav = [
         subListId:'flush-collapseNine',
         title:'User',
         imgSrcArrow:icDownArrow,
+        subMenu:[],
     },
     {
         mainListId:'flush-headingTen',
@@ -123,6 +133,7 @@ const stockDataNav = [
         subListId:'flush-collapseTen',
         title:'Menu',
         imgSrcArrow:icDownArrow,
+        subMenu:[],
     }
     
   ];
@@ -141,6 +152,7 @@ const stockDataNav = [
             subListId={stockDataNav[i].subListId}
             title={stockDataNav[i].title}
             imgSrcArrow={stockDataNav[i].icDownArrow}
+            subMenu={stockDataNav[i].subMenu}
             />
         );
     }
