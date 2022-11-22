@@ -1,14 +1,23 @@
 import React from "react";
 import Navbar from "./Navbar";
 import Topnavbar from "./TopNavbar";
-import CardsDashboard from "./CardsDashboard";
-import GraphDashboard from "./GraphDashboard";
+import DashboardPage from "./Pages/DashboardPage";
+
+import { Routes, Route, useNavigate } from "react-router-dom";
 
 import './dashboard.css';
 import './dashboard-responsive.css';
 
 
 const Dashboard = () => {
+
+    const navigate = useNavigate();
+// const dashboardPage = () => {
+//   // 👇️ navigate to /
+//   navigate('/dashboard');
+// };
+
+
     return(
         <>
             <div className="topBarShadowRight"></div>
@@ -21,9 +30,8 @@ const Dashboard = () => {
                     
                         <Topnavbar />
 
-                        <CardsDashboard />
+                        <DashboardPage />
                         
-                        <GraphDashboard />
                         
                     </div>
                 </div>

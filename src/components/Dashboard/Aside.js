@@ -24,6 +24,7 @@ const stockDataNav = [
         subListId:'flush-collapse1',
         title:'Dashboard',
         subMenu: ["Item 1", "Item 2"],
+        rauteDashboard:'',
     },
     {
         mainListId: 'flush-headingOne', 
@@ -137,12 +138,12 @@ const stockDataNav = [
     }
     
   ];
+
   
   const navItems = () => {
     let navItemsContent = [];
     
     for (let i = 0; i < stockDataNav.length; i++) {
-        console.log('Ali', stockDataNav[i].imgSrc.icHome);
         navItemsContent.push(
         <AsideList 
             mainListId={stockDataNav[i].mainListId}
