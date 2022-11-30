@@ -16,14 +16,6 @@ import icNavUser from "../../Assets/Images/ic-nav-user.svg";
 import icMenu from "../../Assets/Images/ic-menu.svg";
 
 
-
-
-
-// // const clientsRequestNav = useNavigate();
-// const clientsRequest = () => {
-//     clientsRequestNav('/clientsRequest');
-// };
-
 const stockDataNav = [
     {
         mainListId:'flush-heading1',
@@ -34,9 +26,6 @@ const stockDataNav = [
         title:'Dashboard',
         navgateTo: "/admin"
         // subMenu: ["Item 1", "Item 2"],
-        // rauteDashboard:'',
-        // linkTo:'/dashboardPage',
-        // navigateBtn:dashboardPage,
     },
     {
         mainListId: 'flush-headingOne', 
@@ -46,7 +35,6 @@ const stockDataNav = [
         imgSrc:icCorn,
         subListId:'flush-collapseOne', 
         title:'Client Request',
-        // navigateBtn:'clientsRequest',
         navgateTo: "/clientsRequest",
         imgSrcArrow:icDownArrow,
         // subMenu: ["Item 3", "Item 4"],
@@ -60,7 +48,6 @@ const stockDataNav = [
         subListId:'flush-collapseTwo',
         title:'Active Jobs',
         navgateTo: "/activeJobs",
-        // imgSrcArrow:icDownArrow,
         // subMenu: ["Item 5", "Item 6"],
     },
     {
@@ -72,7 +59,6 @@ const stockDataNav = [
         subListId:'flush-collapseThree',
         title:'Finished Jobs',
         navgateTo: "/finishedJobs",
-        // imgSrcArrow:icDownArrow,
         // subMenu: ["Item 7", "Item 8"],
     },
     {
@@ -84,7 +70,6 @@ const stockDataNav = [
         subListId:'flush-collapseFour',
         title:'Job Description',
         navgateTo: "/jobDescription",
-        // imgSrcArrow:icDownArrow,
         // subMenu: ["Item 9", "Item 10"],
     },
     
@@ -118,11 +103,6 @@ const stockDataNav = [
 
 const Aside = () => {
 
-    // const dashboardPageNav = useNavigate();
-    // const dashboardPage = () => {
-    //     dashboardPageNav('/login');
-    
-    // }
 
     return (
         <>

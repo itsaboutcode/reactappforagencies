@@ -1,7 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-// import '../node_modules/bootstrap/dist/js/popper.min.js';
 import '../node_modules/bootstrap/dist/js/bootstrap.min.js';  
 import { BrowserRouter, Routes, Route, useNavigate} from "react-router-dom";
 import Login from "./Components/Login/Login.js";
