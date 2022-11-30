@@ -1,14 +1,15 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 
 const Buttons = ({btnClick}) => {
     return (
         <>
-        <button type="button" onClick={btnClick}  class="btn login-btn btn-green btn-lg p-2">Login</button>
+        <Link to="/admin" class="btn login-btn btn-green btn-lg p-2">Login</Link>
         </>
         );
     };
 
 
     
-    export default Buttons;
+export default Buttons;

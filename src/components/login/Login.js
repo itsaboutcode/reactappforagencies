@@ -6,7 +6,7 @@ import SimpleTextField from "../UIControls/SimpleTextField";
 import UserIconLabel from "../UIControls/UserIconLabel";
 import LockIconLabel from "../UIControls/LockIconLabel";
 
-import {useNavigate} from "react-router-dom";
+import {Link} from "react-router-dom";
 
 
 
@@ -16,11 +16,11 @@ import './login-responsive.css';
 
 const Login = () => {
 
-  const navigate = useNavigate();
-const dashboardPage = () => {
-  // 👇️ navigate to /
-  navigate('/dashboard');
-};
+//   const navigate = useNavigate();
+// const dashboardPage = () => {
+//   // 👇️ navigate to /
+//   navigate('/dashboard');
+// };
   
     return (
         <div class="container-fluid login-container mt-4">
@@ -66,7 +66,7 @@ const dashboardPage = () => {
                       </div>
 
                     <div class="d-grid pt-4">
-                      <Buttons btnClick={dashboardPage} />
+                      <Buttons  />
                     </div>
                   </div>
                   {/* <div class="tab-pane fade" id="nav-register" role="tabpanel" aria-labelledby="nav-register-tab" tabindex="0">

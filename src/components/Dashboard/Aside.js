@@ -2,10 +2,12 @@ import React from "react";
 import AsideList from "./AsideList";
 import icHome from "../../Assets/Images/ic-home.svg";
 import icCorn from "../../Assets/Images/ic-corn.svg";
-import icDownArrow from "../../Assets/Images/ic-down-arrow.svg";
 import icSoybeans from "../../Assets/Images/ic-soybeans.svg";
 import icNutrients from "../../Assets/Images/ic-nutrients.svg";
 import icAdditionalProducts from "../../Assets/Images/ic-additional-products.svg";
+import { useNavigate } from "react-router-dom";
+
+import icDownArrow from "../../Assets/Images/ic-down-arrow.svg";
 import icQuotes from "../../Assets/Images/ic-quotes.svg";
 import icFeathuredProducts from "../../Assets/Images/ic-feathured-products.svg";
 import icWatch from "../../Assets/Images/ic-watch.svg";
@@ -15,6 +17,13 @@ import icMenu from "../../Assets/Images/ic-menu.svg";
 
 
 
+
+
+// // const clientsRequestNav = useNavigate();
+// const clientsRequest = () => {
+//     clientsRequestNav('/clientsRequest');
+// };
+
 const stockDataNav = [
     {
         mainListId:'flush-heading1',
@@ -23,8 +32,11 @@ const stockDataNav = [
         imgSrc:icHome,
         subListId:'flush-collapse1',
         title:'Dashboard',
-        subMenu: ["Item 1", "Item 2"],
-        rauteDashboard:'',
+        navgateTo: "/admin"
+        // subMenu: ["Item 1", "Item 2"],
+        // rauteDashboard:'',
+        // linkTo:'/dashboardPage',
+        // navigateBtn:dashboardPage,
     },
     {
         mainListId: 'flush-headingOne', 
@@ -33,9 +45,11 @@ const stockDataNav = [
         ariaLabelledby:'flush-headingOne' ,
         imgSrc:icCorn,
         subListId:'flush-collapseOne', 
-        title:'Corn',
+        title:'Client Request',
+        // navigateBtn:'clientsRequest',
+        navgateTo: "/clientsRequest",
         imgSrcArrow:icDownArrow,
-        subMenu: ["Item 3", "Item 4"],
+        // subMenu: ["Item 3", "Item 4"],
     },
     {
         mainListId:'flush-headingTwo',
@@ -44,9 +58,10 @@ const stockDataNav = [
         ariaLabelledby:'flush-headingTwo',
         imgSrc:icSoybeans,
         subListId:'flush-collapseTwo',
-        title:'Soybeans',
-        imgSrcArrow:icDownArrow,
-        subMenu: ["Item 5", "Item 6"],
+        title:'Active Jobs',
+        navgateTo: "/activeJobs",
+        // imgSrcArrow:icDownArrow,
+        // subMenu: ["Item 5", "Item 6"],
     },
     {
         mainListId:'flush-headingThree',
@@ -55,9 +70,10 @@ const stockDataNav = [
         ariaLabelledby:'flush-headingThree',
         imgSrc:icNutrients,
         subListId:'flush-collapseThree',
-        title:'Nutrients',
-        imgSrcArrow:icDownArrow,
-        subMenu: ["Item 7", "Item 8"],
+        title:'Finished Jobs',
+        navgateTo: "/finishedJobs",
+        // imgSrcArrow:icDownArrow,
+        // subMenu: ["Item 7", "Item 8"],
     },
     {
         mainListId:'flush-headingFour',
@@ -66,76 +82,12 @@ const stockDataNav = [
         ariaLabelledby:'flush-headingFour',
         imgSrc:icAdditionalProducts,
         subListId:'flush-collapseFour',
-        title:'Additional Products',
-        imgSrcArrow:icDownArrow,
-        subMenu: ["Item 9", "Item 10"],
+        title:'Job Description',
+        navgateTo: "/jobDescription",
+        // imgSrcArrow:icDownArrow,
+        // subMenu: ["Item 9", "Item 10"],
     },
-    {
-        mainListId:'flush-headingFive',
-        dataBsTarget:'#flush-collapseFive',
-        ariaControls:'flush-collapseFive',
-        ariaLabelledby:'flush-headingFive',
-        imgSrc:icQuotes,
-        subListId:'flush-collapseFive',
-        title:'Price Quotes',
-        imgSrcArrow:icDownArrow,
-        subMenu: ["Item 11", "Item 12"],
-    },
-    {
-        mainListId:'flush-headingSix',
-        dataBsTarget:'#flush-collapseSix',
-        ariaControls:'flush-collapseSix',
-        ariaLabelledby:'flush-headingSix',
-        imgSrc:icFeathuredProducts,
-        subListId:'flush-collapseSix',
-        title:'Feathured Products',
-        imgSrcArrow:icDownArrow,
-        subMenu: [],
-    },
-    {
-        mainListId:'flush-headingSeven',
-        dataBsTarget:'#flush-collapseSeven',
-        ariaControls:'flush-collapseSeven',
-        ariaLabelledby:'flush-headingSeven',
-        imgSrc:icWatch,
-        subListId:'flush-collapseSeven',
-        title:'Video',
-        imgSrcArrow:icDownArrow,
-        subMenu:[],
-    },
-    {
-        mainListId:'flush-headingEight',
-        dataBsTarget:'#flush-collapseEight',
-        ariaControls:'flush-collapseEight',
-        ariaLabelledby:'flush-headingEight',
-        imgSrc:icAds,
-        subListId:'flush-collapseEight',
-        title:'Ads',
-        imgSrcArrow:icDownArrow,
-        subMenu:[],
-    },
-    {
-        mainListId:'flush-headingNine',
-        dataBsTarget:'#flush-collapseNine',
-        ariaControls:'flush-collapseNine',
-        ariaLabelledby:'flush-headingNine',
-        imgSrc:icNavUser,
-        subListId:'flush-collapseNine',
-        title:'User',
-        imgSrcArrow:icDownArrow,
-        subMenu:[],
-    },
-    {
-        mainListId:'flush-headingTen',
-        dataBsTarget:'#flush-collapseTen',
-        ariaControls:'flush-collapseTen',
-        ariaLabelledby:'flush-headingTen',
-        imgSrc:icMenu,
-        subListId:'flush-collapseTen',
-        title:'Menu',
-        imgSrcArrow:icDownArrow,
-        subMenu:[],
-    }
+    
     
   ];
 
@@ -152,18 +104,26 @@ const stockDataNav = [
             imgSrc={stockDataNav[i].imgSrc} 
             subListId={stockDataNav[i].subListId}
             title={stockDataNav[i].title}
+            navigateTo={stockDataNav[i].navgateTo}
             imgSrcArrow={stockDataNav[i].icDownArrow}
             subMenu={stockDataNav[i].subMenu}
+
             />
         );
     }
     return navItemsContent;
   };
+  
 
 
 const Aside = () => {
-   
-   
+
+    // const dashboardPageNav = useNavigate();
+    // const dashboardPage = () => {
+    //     dashboardPageNav('/login');
+    
+    // }
+
     return (
         <>
         

@@ -252,28 +252,7 @@ ul,ol{
   overflow: auto;
   padding: 0 1.625rem 1.625rem;
 } 
-.main-navbar{}
-.main-navbar li{
-  margin-bottom: 0.625rem;
-}
-.main-navbar li a{
-  padding: 0.438rem 0.625rem;
-  border: 1px solid var(--nav-border-color);
-  border-radius: 8px;
-  display: flex;
-  font-size: 1rem;
-  font-weight: 500;
-  color: var(--link-darker-color);
-  align-items: center;
-  column-gap: 0.3rem;
-}
-.main-navbar li a:hover, .main-navbar li a.active{
-  background-color: var(--link-green-color);
-  color: var(--white-color);
-}
-.main-navbar li a:hover img, .main-navbar li a.active img{
-  filter: brightness(0) invert(1);
-}
+
 .add{
   background: url(../../Assets/Images/add-bg.png) no-repeat 0 0 transparent;
   background-size: 100%;
