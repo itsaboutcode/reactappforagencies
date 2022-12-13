@@ -2,10 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 
-const Buttons = ({btnClick}) => {
+const Buttons = ({title, linkTo}) => {
     return (
         <>
-        <Link to="/admin" class="btn login-btn btn-green btn-lg p-2">Login</Link>
+        <Link to={linkTo} class="btn login-btn btn-green btn-lg p-2">{title}</Link>
         </>
         );
     };

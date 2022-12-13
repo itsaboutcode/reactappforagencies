@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "../Navbar";
+import JobRequest from "../Shared/JobRequest";
 import Topnavbar from "../TopNavbar";
 
 
@@ -15,8 +16,8 @@ const ClientsRequest = () => {
                     <div>
                     
                         <Topnavbar />
-                        <h1>Client Request</h1>
                         
+                        <JobRequest />
                         
                     </div>
                 </div>

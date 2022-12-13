@@ -114,7 +114,7 @@ input:focus{
 .left-shadow-hide{
   position: absolute;
   width: 20px;
-  z-index: 9999;
+  z-index: 1046;
   left: -10px;
   height: calc(100vh);
   background-color: var(--white-color);
@@ -400,11 +400,13 @@ box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
   border-radius: 6px;
   background-color: var(--gray-100);
 }
+
 .table-scroll-h .table .table-light th, .table-scroll-h .table td{
   font-weight: 400;
-  padding: 1.563rem;  
+  padding: 1rem;  
   color: var(--text-200);
 }
+
 .table-scroll-h .table td{
   color: var(--text-color-300);
   font-size: 1rem;
@@ -1339,3 +1341,4 @@ border: none;
   color: var(--gray-800);
   margin-bottom: 10px;
 }
+.mr-1{margin-right: .2rem;}
