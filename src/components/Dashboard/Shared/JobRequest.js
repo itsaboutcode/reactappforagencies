@@ -2,6 +2,14 @@ import React from "react";
 import JobRequestPopup from "../../Popups/JobRequestPopup";
 
 
+const clientsRequestData = [
+    {jobTitle:'Job title', dueDate: '02/02/2022', startDate: '02/02/2022', endDate: '02/02/2022', jobBudjet: '200', jobStatus: 'Active', categoryList: 'abc', discription: 'Text'},
+    {jobTitle:'Job title', dueDate: '02/02/2022', startDate: '02/02/2022', endDate: '02/02/2022', jobBudjet: '200', jobStatus: 'Active', categoryList: 'abc', discription: 'Text'},
+    {jobTitle:'Job title', dueDate: '02/02/2022', startDate: '02/02/2022', endDate: '02/02/2022', jobBudjet: '200', jobStatus: 'Active', categoryList: 'abc', discription: 'Text'},
+    {jobTitle:'Job title', dueDate: '02/02/2022', startDate: '02/02/2022', endDate: '02/02/2022', jobBudjet: '200', jobStatus: 'Active', categoryList: 'abc', discription: 'Text'}
+]
+
+
 const JobRequest = () => {
     return (
         <>
@@ -19,7 +27,7 @@ const JobRequest = () => {
                       <thead class="table-light">
                         <tr>
                           <th>Job Title</th>
-                          <th>Duse Date</th>
+                          <th>Due Date</th>
                           <th>Start Date</th>
                           <th>End Date</th>
                           <th>Job Status</th>
@@ -30,21 +38,23 @@ const JobRequest = () => {
                         </tr>
                       </thead>
                       <tbody>
-                        <tr>
-                          <td>01</td>
-                          <td>Alex Higgins</td>
-                          <td>Ambrosia</td>
-                          <td>$ 44.5</td>
-                          <td>22 acre </td>
-                          <td>22 acre </td>
-                          <td>22 acre </td>
-                          <td>22 acre </td>
-                          <td class="text-center">
-                            <a href="javascript:;" class="list-actions ic-delete mr-1"></a>
-                            <a href="javascript:;" class="list-actions ic-edit"></a>
-                          </td>
-                        </tr>
-                       
+                        {clientsRequestData?.map(comp => 
+                            <tr>
+                                <td>{comp.jobTitle}</td>
+                                <td>{comp.dueDate}</td>
+                                <td>{comp.startDate}</td>
+                                <td>{comp.endDate}</td>
+                                <td>{comp.jobBudjet}</td>
+                                <td>{comp.jobStatus}</td>
+                                <td>{comp.categoryList}</td>
+                                <td>{comp.discription}</td>
+                                <td class="text-center">
+                                    <a href="javascript:;" class="list-actions ic-delete mr-1"></a>
+                                    <a href="javascript:;" class="list-actions ic-edit"></a>
+                                </td>
+                            </tr>
+                        )}
+                        
                         
                       </tbody>
                     </table>
