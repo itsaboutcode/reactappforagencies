@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "../Navbar";
+import ActiveJobsList from "../Shared/ActiveJobsList";
 import Topnavbar from "../TopNavbar";
 
 
@@ -15,7 +16,7 @@ const ActiveJobs = () => {
                     <div>
                     
                         <Topnavbar />
-                        <h1>Active Jobs</h1>
+                        <ActiveJobsList />
                         
                         
                     </div>

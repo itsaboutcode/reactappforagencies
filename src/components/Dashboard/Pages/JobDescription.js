@@ -15,7 +15,7 @@ const JobDescription = () => {
                     <div>
                     
                         <Topnavbar />
-                        <h1>Job Description</h1>
+                        <h1>Job Discossion</h1>
                         
                         
                     </div>

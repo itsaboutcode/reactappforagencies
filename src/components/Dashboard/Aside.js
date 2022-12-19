@@ -68,7 +68,7 @@ const stockDataNav = [
         ariaLabelledby:'flush-headingFour',
         imgSrc:icAdditionalProducts,
         subListId:'flush-collapseFour',
-        title:'Job Description',
+        title:'Job Discossion',
         navgateTo: "/jobDescription",
         // subMenu: ["Item 9", "Item 10"],
     },

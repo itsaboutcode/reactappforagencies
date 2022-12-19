@@ -9,6 +9,7 @@ import ClientsRequest from './Components/Dashboard/Pages/ClientsRequest';
 import ActiveJobs from './Components/Dashboard/Pages/ActiveJobs';
 import JobDescription from './Components/Dashboard/Pages/JobDescription';
 import FinishedJobs from './Components/Dashboard/Pages/FinishedJobs';
+import JobDetailsPage from './Components/Dashboard/Pages/JobDetailsPage';
 
 
 
@@ -26,6 +27,7 @@ function App() {
         <Route path="/activeJobs" element={<ActiveJobs />} />
         <Route path="/finishedJobs" element={<FinishedJobs />} />
         <Route path="/jobDescription" element={<JobDescription />} />
+        <Route path="/jobDetailsPage" element={<JobDetailsPage />} />
       </Routes>
     </BrowserRouter>
     </>

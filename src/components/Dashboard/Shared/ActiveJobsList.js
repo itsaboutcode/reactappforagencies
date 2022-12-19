@@ -1,26 +1,24 @@
 import React from "react";
-import JobRequestPopup from "../../Popups/JobRequestPopup";
+import { Link } from "react-router-dom";
+// import JobDetailsPage from "../pages/jobDetailsPage";
 
 
-const clientsRequestData = [
-    {jobTitle:'Job title', dueDate: '02/02/2022', startDate: '02/02/2022', endDate: '02/02/2022', jobBudjet: '200', jobStatus: 'Active', categoryList: 'abc', discription: 'Text'},
-    {jobTitle:'Job title', dueDate: '02/02/2022', startDate: '02/02/2022', endDate: '02/02/2022', jobBudjet: '200', jobStatus: 'Finished    ', categoryList: 'abc', discription: 'Text'},
-    {jobTitle:'Job title', dueDate: '02/02/2022', startDate: '02/02/2022', endDate: '02/02/2022', jobBudjet: '200', jobStatus: 'Active', categoryList: 'abc', discription: 'Text'},
-    {jobTitle:'Job title', dueDate: '02/02/2022', startDate: '02/02/2022', endDate: '02/02/2022', jobBudjet: '200', jobStatus: 'Active', categoryList: 'abc', discription: 'Text'},
-    {jobTitle:'Job title', dueDate: '02/02/2022', startDate: '02/02/2022', endDate: '02/02/2022', jobBudjet: '200', jobStatus: 'Active', categoryList: 'abc', discription: 'Text'}
+const activeJobsList = [
+    {jobTitle:'Job title', dueDate: '02/02/2022', startDate: '02/02/2022', endDate: '02/02/2022', jobBudjet: '200', jobStatus: 'Active', categoryList: 'abc', discription: 'Text', jobDetails:'/jobDetailsPage'},
+    {jobTitle:'Job title', dueDate: '02/02/2022', startDate: '02/02/2022', endDate: '02/02/2022', jobBudjet: '200', jobStatus: 'Active', categoryList: 'abc', discription: 'Text', jobDetails:'/jobDetailsPage'},
+    {jobTitle:'Job title', dueDate: '02/02/2022', startDate: '02/02/2022', endDate: '02/02/2022', jobBudjet: '200', jobStatus: 'Active', categoryList: 'abc', discription: 'Text', jobDetails:'/jobDetailsPage'},
+    {jobTitle:'Job title', dueDate: '02/02/2022', startDate: '02/02/2022', endDate: '02/02/2022', jobBudjet: '200', jobStatus: 'Active', categoryList: 'abc', discription: 'Text', jobDetails:'/jobDetailsPage'},
+    {jobTitle:'Job title', dueDate: '02/02/2022', startDate: '02/02/2022', endDate: '02/02/2022', jobBudjet: '200', jobStatus: 'Active', categoryList: 'abc', discription: 'Text', jobDetails:'/jobDetailsPage'}
 ]
 
 
-const JobRequest = () => {
+const ActiveJobsList = ({jobDetails}) => {
     return (
         <>
             <div class="card info-card">
                 <div class="card-body p-32">
                   <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center list-data-show-header">
-                    <h1>Client's Request</h1>
-                    <div class="btn-toolbar mb-2 mb-md-0">
-                        <JobRequestPopup />
-                    </div>
+                    <h1>Active Jobs</h1>
                   </div>
   
                   <div class="table-scroll-h">
@@ -39,14 +37,18 @@ const JobRequest = () => {
                         </tr>
                       </thead>
                       <tbody>
-                        {clientsRequestData?.map(comp => 
+                        {activeJobsList?.map(comp => 
                             <tr>
-                                <td>{comp.jobTitle}</td>
+                                <td>
+                                  <Link to={comp.jobDetails}>
+                                    {comp.jobTitle}
+                                  </Link>
+                                  </td>
                                 <td>{comp.dueDate}</td>
                                 <td>{comp.startDate}</td>
                                 <td>{comp.endDate}</td>
-                                <td>{comp.jobStatus}</td>
                                 <td>{comp.jobBudjet}</td>
+                                <td>{comp.jobStatus}</td>
                                 <td>{comp.categoryList}</td>
                                 <td>{comp.discription}</td>
                                 <td class="text-center">
@@ -66,4 +68,4 @@ const JobRequest = () => {
         </>
     )
 }
-export default JobRequest;
+export default ActiveJobsList;
