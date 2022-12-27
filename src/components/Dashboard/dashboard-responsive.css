@@ -1,0 +1,409 @@
+
+@media (min-width: 380px) and (max-width: 419.98px){ 
+
+    .banner-ic-play {
+      width: 25px;
+      height: 25px;
+    }
+    .logo-text {
+      padding: 1.313rem 0 1.313rem 2.3rem !important;
+  }
+    .carousel-custom .carousel-item img{
+      height: 13.5rem !important;
+    }
+    .carousel-custom .carousel-caption {
+      
+      max-width: 57% !important; 
+    }
+    .carousel-custom .carousel-caption h5 {
+      font-size: 1.2rem;
+      line-height: 1.5rem;
+    }
+    .carousel-custom .carousel-caption p {
+      margin-top: 0.3rem;
+      margin-bottom: 0.5rem;
+      font-size: .7rem;
+    }
+    .category-banner {
+      font-size: .8rem;
+    }
+    .action-btn-banner {
+      right: 1rem;
+      bottom: 1rem;
+    }
+    .action-btn-banner a {
+      width: 25px;
+      height: 25px;
+    }
+   }
+  @media (min-width: 380px) and (max-width: 767.98px){ 
+    .login-section-width{
+      max-width: 22.438rem;
+    }
+    .login-options ul li a {
+      padding: 0.625rem;
+    }
+    .logo-text{
+      width: auto;
+      padding: 1.313rem 1.313rem 1.313rem 3.3rem;
+    }
+    .navbar-collapse{display: flex;}
+    .btn-menu{
+      position:absolute;
+      top: 1rem;
+      left: 0;
+    }
+    .main-body>div:first-child {
+      height: calc(100vh);
+    }
+    .btn-nav-close{
+      position: absolute;
+      right: 3px;
+      top: 2px;
+    }
+    .main-body{
+      grid-template-columns: auto;
+    }
+    .col-sm-7 {
+        flex: 0 0 auto;
+        width: 58.33333333%;
+    }
+    .col-sm-5 {
+      flex: 0 0 auto;
+      width: 41.66666667%;
+    }
+    .main-body>div:nth-child(2) {
+      padding: 1.875rem 0 0 0;
+    }
+    .pb-sm-3 {
+      padding-bottom: 1rem!important;
+    }
+    .banner-ic-play {
+      width: 25px;
+      height: 25px;
+    }
+    .carousel-custom .carousel-item img{
+      height: 11rem;
+    }
+    .carousel-custom .carousel-caption {
+      top: .5rem;
+      left: 1rem;
+      max-width: 44%; 
+    }
+    .carousel-custom .carousel-caption h5 {
+      font-size: 1.2rem;
+      line-height: 1.5rem;
+    }
+    .carousel-custom .carousel-caption p {
+      margin-top: 0.3rem;
+      margin-bottom: 0.5rem;
+      font-size: .7rem;
+    }
+    .category-banner {
+      font-size: .8rem;
+    }
+    .action-btn-banner {
+      right: 1rem;
+      bottom: 1rem;
+    }
+    .action-btn-banner a {
+      width: 25px;
+      height: 25px;
+    }
+    .upload-file input {
+      height: 237px;
+    }
+    .upload-file {
+      margin-bottom: 0.5rem;
+    }
+    .form-container {
+      max-width: 26.688rem;
+      margin: 0 auto;
+  }
+  .form-container .card-body {
+    padding: 2.125rem 3.25rem;
+  }
+  
+  
+   }
+   @media (min-width: 768px) and (max-width:  991.98px){
+    .main-body{
+      grid-template-columns: auto;
+    }
+    .logo-text {
+      padding: 1.313rem 1.313rem 1.313rem 3.8rem;
+      text-align: left;
+    }
+    .navbar-collapse{display: flex;}
+    .btn-menu{
+      position:absolute;
+      top: 1rem;
+      left: 8px;
+    }
+    .main-body>div:first-child {
+      height: calc(100vh);
+    }
+    .btn-nav-close{
+      position: absolute;
+      right: 3px;
+      top: 2px;
+    }
+    /* .btn-menu, .btn-nav-close{
+      display: none;
+    }
+    .offcanvas{
+      position: relative;
+      z-index: -1;
+      transform: none !important;
+      visibility: visible;
+    } */
+    
+    /* .btn-menu, .btn-nav-close{
+      display: none;
+    }
+    .offcanvas{
+      position: relative;
+      z-index: -1;
+      transform: none !important;
+      visibility: visible;
+    } */
+    /* .col-md-6{
+      flex: 0 0 auto;
+      width: 100%;
+    } */
+    .main-body>div:nth-child(2) {
+      padding: 1.875rem 0;
+    }
+    .banner-ic-play {
+      width: 25px;
+      height: 25px;
+    }
+    .carousel-custom .carousel-caption {
+      top: 1rem;
+      max-width: 42%; 
+    }
+    .carousel-custom .carousel-caption h5 {
+      font-size: 1.5rem;
+      line-height: 1.7rem;
+    }
+    .carousel-custom .carousel-caption p {
+      margin-top: 0.3rem;
+      margin-bottom: 0.5rem;
+      font-size: .9rem;
+    }
+    .category-banner {
+      font-size: .8rem;
+    }
+    .action-btn-banner {
+      right: 1rem;
+      bottom: 1rem;
+    }
+    .action-btn-banner a {
+      width: 25px;
+      height: 25px;
+    }
+  }
+  @media (min-width: 992px) and (max-width:  1199.98px){
+    .btn-menu, .btn-nav-close{
+      display: none;
+    }
+    .offcanvas{
+      position: relative;
+      transform: none !important;
+      visibility: visible;
+    }
+    .banner-ic-play {
+      width: 25px;
+      height: 25px;
+    }
+    .carousel-custom .carousel-caption {
+      top: 1rem;
+      max-width: 42%; 
+    }
+    .carousel-custom .carousel-caption h5 {
+      font-size: 1.5rem;
+      line-height: 1.7rem;
+    }
+    .carousel-custom .carousel-caption p {
+      margin-top: 0.3rem;
+      margin-bottom: 0.5rem;
+      font-size: .9rem;
+    }
+    .category-banner {
+      font-size: .8rem;
+    }
+    .action-btn-banner {
+      right: 1rem;
+      bottom: 1rem;
+    }
+    .action-btn-banner a {
+      width: 25px;
+      height: 25px;
+    }
+  
+  }
+  @media (min-width: 1200px) and (max-width:  1399.98px){
+    .banner-ic-play {
+      width: 35px;
+      height: 35px;
+  }
+  .carousel-custom .carousel-caption {
+      max-width: 49%;
+      top: 1.188rem;  
+    }
+    .carousel-custom .carousel-caption h5 {
+      font-size: 2rem;
+      line-height: 2.5rem;
+    }
+    .btn-menu, .btn-nav-close{
+      display: none;
+    }
+    .logo-text {
+      width: 290px;
+    }
+    .main-body {
+      grid-template-columns: 290px auto;
+    }
+    .main-body>div:first-child {
+      padding: 1rem;
+    }
+    .info-card-body > a {
+      padding: 0.338rem 0.338rem 0 0.338rem;
+    }
+    .info-card-body > a i {
+      width: 18px;
+      height: 18px;
+    }
+    .info-card {
+      min-height: 11rem;
+    }
+    .main>div:nth-child(2) {
+      padding: 1.5rem 0 0 1.5rem;
+    }
+    .info-card-body > p {
+      font-size: 0.713rem;
+    }
+    .offcanvas{
+      position: relative;
+      transform: none !important;
+      visibility: visible;
+    }
+  }
+  @media (min-width: 1400px) {
+    .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+      max-width: 1480px;
+  }
+  .btn-menu, .btn-nav-close{
+    display: none;
+  }
+  .offcanvas{
+    position: relative;
+    transform: none !important;
+    visibility: visible;
+  }
+  }
+  
+  @media (min-width: 380px){
+    .table-scroll-h{
+      width: calc(100vw - 100px);
+      white-space: nowrap;
+    }
+  }
+  @media (min-width: 576px){
+    .table-scroll-h{
+      width: 474px;
+      white-space: nowrap;
+    }
+  }
+  @media (min-width: 768px){
+    .table-scroll-h{
+      width: 649px;
+      white-space: nowrap;
+    }
+  }
+  @media (min-width: 992px){
+    .table-scroll-h{
+      width: 542px;
+      white-space: nowrap;
+    }
+  }
+  @media (min-width: 1200px){
+    .table-scroll-h{
+      width: 747px;
+      white-space: nowrap;
+    }
+  }
+  
+  @media (min-width: 1400px){
+    .table-scroll-h{
+      width: 1062px;
+    }
+  }
+  
+  
+  @media (min-width: 1399.99) {
+    
+    .info-card .p-32{
+      padding: 1rem !important;
+    }
+    .table-scroll-h .table .table-light th, .table-scroll-h .table td {
+      font-weight: 400;
+      padding: 1.563rem;
+      color: var(--text-200);
+      white-space: nowrap;
+  }
+    .table-scroll-h th > span{
+      display: flex;
+      align-items: center;
+      column-gap: .5rem;
+      justify-content: space-between;
+    }
+  }
+  
+  @media (min-width: 500px) {
+    html{
+      font-size: 12px;
+    }
+  }
+  @media (min-width: 570px) {
+    html{
+      font-size: 12px;
+    }
+  }
+  @media (min-width: 620px) {
+    html{
+      font-size: 12px;
+    }
+  }
+  @media (min-width: 600px) {
+    html{
+      font-size: 12px;
+    }
+  }
+  @media (min-width: 720px) {
+    html{
+      font-size: 12px;
+    }
+  }
+  @media (min-width: 800px) {
+    html{
+      font-size: 13px;
+    }
+  }
+  @media (min-width: 860px) {
+    html{
+      font-size: 13px;
+    }
+  }
+  @media (min-width: 920px) {
+    html{
+      font-size: 13px;
+    }
+  }
+  @media (min-width: 1000px) {
+    html{
+      font-size: 14px;
+    }
+  }
+  
+  
