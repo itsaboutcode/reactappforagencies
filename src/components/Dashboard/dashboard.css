@@ -609,7 +609,8 @@ box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
 .btn-green, .btn-green:hover{
   background-color: var(--link-green-color);
   border-color: var(--link-green-color);
-  color: var(--white-color);
+  color: var(--white-color) !important;
+  text-decoration: none !important;
 }
 .form-heading{
   color: var(--form-heading-color);
@@ -1356,4 +1357,8 @@ border: none;
     width: 200px;
     text-overflow: ellipsis;
     display: block;
+}
+.justify-between{justify-content: space-between;}
+.item-center{
+  align-items: center;
 }

@@ -112,7 +112,7 @@ const JobDetailsPage = () => {
                                     <div className="col-md-3">
                                         <div className="p-3">
                                             <div className="d-grid gap-2">
-                                                <Link className="btn login-btn btn-green btn-lg btn-block p-2">Apply Now</Link>
+                                                <Link to="/BidJobPage" className="btn login-btn btn-green btn-lg btn-block p-2">Apply Now</Link>
                                                 <Link className="btn btn-outline-secondary btn-block">Save Job</Link>
                                             </div>
 

@@ -10,6 +10,7 @@ import ActiveJobs from './Components/Dashboard/Pages/ActiveJobs';
 import JobDescription from './Components/Dashboard/Pages/JobDescription';
 import FinishedJobs from './Components/Dashboard/Pages/FinishedJobs';
 import JobDetailsPage from './Components/Dashboard/Pages/JobDetailsPage';
+import BidJobPage from './Components/Dashboard/Pages/BidJobPage';
 
 
 
@@ -28,6 +29,7 @@ function App() {
         <Route path="/finishedJobs" element={<FinishedJobs />} />
         <Route path="/jobDescription" element={<JobDescription />} />
         <Route path="/jobDetailsPage" element={<JobDetailsPage />} />
+        <Route path="/bidJobPage" element={<BidJobPage />} />
       </Routes>
     </BrowserRouter>
     </>
